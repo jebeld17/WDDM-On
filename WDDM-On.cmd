@@ -1,1 +1,1 @@
-powershell -Command "Start-Process 'cmd' 'cd c:/program files/nvidia corporation/nvsmi && nvidia-smi -fdm 0 && timeout /t 5 && shutdown -r && exit'"
+powershell -Command "Start-Process 'cmd' -Verb RunAs -ArgumentList '/k cd c:/program files/nvidia corporation/nvsmi && nvidia-smi -fdm 0 && timeout /t 5 && shutdown -r && exit'"
